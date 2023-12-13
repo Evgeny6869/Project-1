@@ -5,9 +5,9 @@ html {
 @font-face {
     font-family: 'TT Lakes';
     src: 
-    url('/Fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/Fonts/TTLakes-Regular.woff') format('woff'),
-    url('/Fonts/TTLakes-Regular.ttf') format('truetype');
+    url('../Fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/TTLakes-Regular.woff') format('woff'),
+    url('../Fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,9 +15,9 @@ html {
 @font-face {
     font-family: 'TT Lakes bold';
     src: 
-    url('/Fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/Fonts/TTLakes-Bold.woff') format('woff'),
-    url('/Fonts/TTLakes-Bold.ttf') format('truetype');
+    url('../Fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../Fonts/TTLakes-Bold.woff') format('woff'),
+    url('../Fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

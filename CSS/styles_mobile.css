@@ -265,6 +265,10 @@ a {
 }
 }
 
+.jpg320 {
+    text-align: center;
+}
+
 .photoTAB {
     border-radius: 7px;
     margin-top: 45px;

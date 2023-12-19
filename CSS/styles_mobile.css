@@ -194,7 +194,7 @@ h1 {
 a {
     text-decoration: none;
     color: #7E7E82;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 @media (max-width: 1119px) {

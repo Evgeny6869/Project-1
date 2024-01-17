@@ -54,7 +54,7 @@ body {
 }
 
 
-.header_left {
+.header__column1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -63,7 +63,7 @@ body {
     flex-grow: 1;
 }
 
-.header_right {
+.header__column2 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -72,28 +72,27 @@ body {
     flex-grow: 1;
 }
 
-.header_left > li {
+.header__column1  > li {
     padding-right: 16px;
-    margin-left: -5px;
 }
 
-.header_right > li {
+.header__column2  > li {
     padding-right: 16px;
 
 }
 
-.repair::before {
+.header__repair::before {
     content: '';
     position: absolute;
     background-image: url(../Icon/divider.svg);
     width: 2px;
     height: 32px;
     margin-top: 6px;
-    margin-left: -10px;
+    margin-left: -7px;
 }
 
-@media (min-width: 767px) {
-    .logo::before { 
+@media (min-width: 426px) {
+    .header__logo::before { 
         content: '';
         position: absolute;
         background-image: url(../Icon/divider.svg);
@@ -105,7 +104,7 @@ body {
 }
 
 
-.icon {
+.header__button {
     border: none;
     background-color: transparent;
 }
@@ -118,17 +117,14 @@ body {
 
 
 @media (max-width:426px) {  
-    .divider_1, 
-    .call,
-    .chat, 
-    .profile, 
-    .repair_status  {
+    .header__call,
+    .header__chat, 
+    .header__profile, 
+    .header__repair_status  {
         display: none;
     }
-   .repair {
-   margin-right: -10px;
-   margin-left: -5px;
-}
+    .header__repair {
+    }
 }
 
 
@@ -152,7 +148,7 @@ main {
         }
     }
 
-h1 {
+.title__content-text {
     color: #1B1C21;
     font-family: TT Lakes bold;
     font-size: 28px;
@@ -163,44 +159,46 @@ h1 {
     letter-spacing: -0.6px;
 }
 
-@media (max-width:1119px) {
-
-    .highlightPC {
-        display: none;
-        }
-    }
+   
 @media (min-width: 1119px) {
-        .highlight {
-            display: none;
-            }
-        .h1_svg {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-right: 25px;
-            }
-        .repair_status {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .repairPC {
-            margin-right: 30px;
-            margin-left: 10px;
-        }
-        .checkstatusPC {
-            margin-left: 10px;
-        }
-
+    .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .title__repair-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .title__button {
+    border: none;
+    background-color: transparent;
+    margin-right: 30px;
+    margin-left: 10px;
+    }
+    .title__button {
+    margin-left: 10px;
+    }
+    .title__content-text {
+        color: #1B1C21;
+        font-family: TT Lakes bold;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        padding-left: 24px;
+        letter-spacing: -0.6px;
+    }
 }
 
-.header-title {
+.title__content {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.header-title::before {
+.title__content::before {
     content: '';
     width: 5px;
     height: 40px;
@@ -211,7 +209,7 @@ h1 {
     margin-left: -1px;
 }
 
-.navigation {
+.menu__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -224,46 +222,39 @@ h1 {
 }
 
 @media (min-width: 1119px) {
-    .navigation{
+    .menu {
+       
+        padding-left: 12px;
+    }
+    .menu__list{
         flex-wrap: wrap;
-        margin-bottom: 55px;
+        margin-bottom: 35px;
+        height: 120px;
+        
     }
-    .uslugi {
+    .menu__services {
         display: none;
-    }
-    .reviews {
-        padding-left: 20px;
-        padding-top: 10px;
     }
 }
 
-.menu:hover { 
+nav>ul>li>a:hover { 
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background: #FFF; 
     letter-spacing: normal;    
-    padding: 8px 9px 8px 10px;
+    padding:10px;
 }
+
 
 ::-webkit-scrollbar {
     width: 0;
 }
 
 
-a {
+nav>ul>li>a {
+    box-sizing: border-box;
     text-decoration: none;
     color: #7E7E82;
-    text-wrap: nowrap;
-}
-
-@media (max-width: 1119px) {
-.brands,
-.repair_status {
-    display: none;
-}
-}
-
-.menu {
     text-wrap: nowrap;
     color: #7E7E82;
     font-family: TT Lakes;
@@ -275,22 +266,29 @@ a {
     margin-right: 35px;
 }
 
+@media (max-width: 1119px) {
+    .menu__brands,
+    .title__repair-status {
+    display: none;
+    }
+}
+
+
 @media (min-width: 767px) {
-.text_photo {
+    .about {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -40px;
-}
+    }
 }
 
-.about-us {
+.about__text {
     margin-right: 16px;
     margin-left: 16px;
-    
 }
 
-.text_about, .text_about2 {
+.about__part-1, .about__part-2 {
     color: #1B1C21;
     font-family: TT Lakes;
     font-size: 14px;
@@ -302,36 +300,37 @@ a {
 
 
 @media (max-width:767px) {
-.text_about2 {
+    .about__part-2 {
     display: none;
-}
+    }
 }
 
 @media (max-width:1119px) {
-    .recomend_us {
+    .about__recomend-us {
         display: none;
     }
 
 }
 
 @media (min-width:1119px) {
-.text_photo {
+    .about {
     display: flex;
     justify-content: space-between;
     margin-top: px;
     height: 250px;
-}
-.about-us {
+    padding-left: 12px;
+    }
+    .about__text {
     margin-top: -65px;
-}
+    }
 }
 
-.jpg320 {
+.logo-cps__jpg {
     text-align: center;
 }
 
 @media (max-width: 767px) {
-    .photo {
+    .logo-cps__photo {
         width: 320px;
         height: 176px;
         margin-top: 0;
@@ -340,32 +339,31 @@ a {
 }
 
 @media (min-width: 767px) {
-    .text_photo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        }
-    .photo {
-        width: 360px;
-        height: 208px;
-        border-radius: 7px;
-        margin-top: 45px;
-        margin-right: 25px;
-}
+    .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo-cps__photo {
+    width: 360px;
+    height: 208px;
+    border-radius: 7px;
+    margin-top: 45px;
+    margin-right: 25px;
+    }
 }
 
 
 @media (min-width: 1119px) {
-    .photo {
+    .logo-cps__photo {
         border-radius: 7px;
         margin-right: 25px;
         width: 532px;
         height: 307px;
-       
     }
 }
 
-.read_more {
+.about__read-more {
     color: #1B1C21;
     font-family: TT Lakes;
     font-size: 16px;
@@ -377,7 +375,7 @@ a {
     position: relative;
 }
 
-.read_more::before {
+.about__read-more::before {
     content: '';
     position: absolute;
     background: url(../Icon/expand_down.svg);
@@ -386,7 +384,7 @@ a {
     margin-left: -22px;
 }
     
-.expand {
+.about__expand {
     display: flex;
     align-items: center;
     color: #1B1C21;

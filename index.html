@@ -6,59 +6,90 @@
   <link rel="stylesheet" href="./CSS/styles_mobile.css">
   <title>Сервис CPS</title>
 </head>
+
 <body>
+  
   <header class="header">
-    <ul class="header_left">
-        <li class="burger"><button class="icon"><img src="Icon/burger.svg" alt="меню"></button> </li>
-        <li class="logo"><img src="Icon/logo.svg" alt="Компания CPS"></li>  
+    <ul class="header__column1">
+        <li class="header__menu">
+          <button class="header__button"><img src="Icon/burger.svg" alt="меню"></button> 
+        </li>
+        <li class="header__logo">
+          <img src="Icon/logo.svg" alt="Компания CPS">
+        </li>  
     </ul>  
-    <ul class="header_right">    
-        <li class="call"><button class="icon"><img src="Icon/call.svg" alt="Звонок"></button></li>    
-        <li class="chat"><button class="icon"><img src="Icon/chat.svg" alt="Чат"></button></li>    
-        <li class="profile"><button class="icon"><img src="Icon/profile.svg" alt="Профиль"></button></li>   
-        <li class="repair"><button class="icon"><img src="Icon/repair.svg" alt="Ремонт"></button></li>
-        <li class="checkstatus"><button class="icon"><img src="Icon/checkstatus.svg" alt="Статус заказа"></button></li>
+    <ul class="header__column2">    
+        <li class="header__call">
+          <button class="header__button"><img src="Icon/call.svg" alt="Звонок"></button>
+        </li>    
+        <li class="header__chat">
+          <button class="header__button"><img src="Icon/chat.svg" alt="Чат"></button>
+        </li>    
+        <li class="header__profile">
+          <button class="header__button"><img src="Icon/profile.svg" alt="Профиль"></button>
+        </li>   
+        <li class="header__repair">
+          <button class="header__button"><img src="Icon/repair.svg" alt="Ремонт"></button>
+        </li>
+        <li class="header__checkstatus">
+          <button class="header__button"><img src="Icon/checkstatus.svg" alt="Статус заказа"></button>
+        </li>
     </ul>
   </header>
+
   <main>
-  <section class="h1_svg">
-    <div class="header-title">
-      <h1>Услуги и сервисы</h1>
-    </div>
-    <div class="repair_status">
-       <b>Оставить заявку</b> <button class="icon"><img class="repairPC" src="Icon\repair.svg" alt="Ремонт"></button>
-       <b>Статус ремонта</b> <button class="icon"><img class="checkstatusPC" src="Icon\checkstatus.svg" alt="Статус заказа" ></button>
-    </div>
-  </section>
-  <nav>
-    <ul class="navigation">  
-      <li class="menu brands">
-         <a href="#" title="Ремонтируемые бренды">Ремонтируемые бренды</a></li>
-      <li class="menu devices">
-         <a href="#" title="Ремонтируемые устройства">Ремонтируемые устройства</a></li>
-      <li class="menu uslugi">
-         <a href="#" title="Дополнительные услуги">Дополнительные услуги</a></li>
-      <li class="menu price">
+
+      <div class="title">
+        <div class="title__content">
+          <h1 class="title__content-text">Услуги и сервисы</h1>
+        </div>
+          <div class="title__repair-status">
+             <span class="title__button-name"><b>Оставить заявку</b></span>
+             <button class="title__button">
+               <img src="Icon\repair.svg" alt="Ремонт">
+             </button>
+              <span class="title__button-name"><b>Статус ремонта</b></span>
+             <button class="title__button">
+               <img src="Icon\checkstatus.svg" alt="Статус заказа" >
+             </button>
+          </div>
+      </div>
+      
+      <nav class="menu">
+       <ul class="menu__list">  
+         <li class="menu__brands--active">
+           <a href="#" title="Ремонтируемые бренды" >Ремонтируемые бренды</a></li>
+         <li class="menu__devices">
+           <a href="#" title="Ремонтируемые устройства">Ремонтируемые устройства</a></li>
+         <li class="menu__services">
+           <a href="#" title="Дополнительные услуги">Дополнительные услуги</a></li>
+         <li class="menu__price">
          <a href="#" title="Цены на услуги">Цены на услуги</a></li>
-      <li class="menu adress">
-         <a href="#" title="Адреса севисных центров">Адреса севисных центров</a></li>
-      <li class="menu special_price">
-         <a href="#" title="Специальные цены">Специальные цены</a></li>
-      <li class="menu reviews">
-         <a href="#" title="Отзывы">Отзывы</a></li>
-    </ul>  
-  </nav>
-  <section class="text_photo">
-    <div class="about-us">
-      <p class="text_about">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-      <p class="text_about2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="recomend_us">, что подтверждает большое количество постоянных клиентов</span>. 
-       <span class="recomend_us">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
-      </p>
-      <button class="expand">
-      <span class="read_more">Читать далее</span></button>
+         <li class="menu__adress">
+           <a href="#" title="Адреса севисных центров">Адреса севисных центров</a></li>
+         <li class="menu__special-price">
+           <a href="#" title="Специальные цены">Специальные цены</a></li>
+         <li class="menu__reviews">
+           <a href="#" title="Отзывы">Отзывы</a></li>
+       </ul>  
+      </nav>
+
+    <div class="about">
+      <div class="about__text">
+        <p class="about__part-1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+        <p class="about__part-2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="about__recomend-us">, что подтверждает большое количество постоянных клиентов</span>. 
+        <span class="about__recomend-us">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+        </p>
+        <button class="about__expand">
+          <span class="about__read-more">Читать далее</span>
+        </button>
+      </div>
+      <div class="logo-cps">
+        <p class="logo-cps__jpg">
+          <img class="logo-cps__photo" src="./jpg/MG3223PC.jpg" alt="Логотип и режим работы"/>
+        </p>
+      </div>
     </div>
-    <p class="jpg320"><img class="photo" src="./jpg/MG3223PC.jpg" alt="Логотип и режим работы" /></p>
-  </section>
   </main>  
 </body>
 </html>

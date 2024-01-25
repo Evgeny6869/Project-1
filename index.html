@@ -6,69 +6,69 @@
   <link rel="stylesheet" href="./CSS/styles.css">
   <title>Сервис CPS</title>
 </head>
-<body>  
+
+<body>
+  
   <header class="header">
     <ul class="header__column1">
         <li class="header__menu">
-          <button class="header__button"><img src="Icon/burger.svg" alt="меню"></button> 
+          <button class="burger"><img src="Icon/burger.svg" alt="меню"></button> 
         </li>
         <li class="header__logo">
-          <img src="Icon/logo.svg" alt="Компания CPS">
+          <button class="logo"><img src="Icon/logo.svg" alt="Компания CPS"></button>
         </li>  
     </ul>  
     <ul class="header__column2">    
         <li class="header__call">
-          <button class="header__button"><img src="Icon/call.svg" alt="Звонок"></button>
+          <button class="call"><img src="Icon/call.svg" alt="Звонок"></button>
         </li>    
         <li class="header__chat">
-          <button class="header__button"><img src="Icon/chat.svg" alt="Чат"></button>
+          <button class="chat"><img src="Icon/chat.svg" alt="Чат"></button>
         </li>    
         <li class="header__profile">
-          <button class="header__button"><img src="Icon/profile.svg" alt="Профиль"></button>
-        </li>   
-        <li class="header__repair">
-          <button class="header__button"><img src="Icon/repair.svg" alt="Ремонт"></button>
-        </li>
-        <li class="header__checkstatus">
-          <button class="header__button"><img src="Icon/checkstatus.svg" alt="Статус заказа"></button>
+          <button class="profile"><img src="Icon/profile.svg" alt="Профиль"></button>
         </li>
     </ul>
+       <div class="header__repair-status">      
+          <button class="repair"><img src="Icon/repair.svg" alt="Ремонт"></button>
+          <button class="checkstatus"><img src="Icon/checkstatus.svg" alt="Статус заказа"></button>
+       </div>
   </header>
+
   <main>
+
       <div class="title">
         <div class="title__content">
           <h1 class="title__content-text">Услуги и сервисы</h1>
         </div>
-          <div class="title__repair-status">
+        <div class="title__repair-status">      
              <span class="title__button-name"><b>Оставить заявку</b></span>
-             <button class="title__button">
-               <img src="Icon\repair.svg" alt="Ремонт">
-             </button>
-              <span class="title__button-name"><b>Статус ремонта</b></span>
-             <button class="title__button">
-               <img src="Icon\checkstatus.svg" alt="Статус заказа" >
-             </button>
+             <button class="repair"><img src="Icon/repair.svg" alt="Ремонт"></button>
+             <span class="title__button-name"><b>Статус ремонта</b></span>
+             <button class="checkstatus"><img src="Icon/checkstatus.svg" alt="Статус заказа"></button>
           </div>
+        </div>
       </div>
       
       <nav class="menu">
        <ul class="menu__list">  
-         <li class="menu__brands--active">
-           <a href="#" title="Ремонтируемые бренды" >Ремонтируемые бренды</a></li>
-         <li class="menu__devices">
-           <a href="#" title="Ремонтируемые устройства">Ремонтируемые устройства</a></li>
-         <li class="menu__services">
+         <li class="menu__item--active">
+           <a class="menu__link-active--max-1120px" href="#" title="Ремонтируемые бренды">Ремонтируемые бренды</a></li>
+         <li class="menu__item--active">
+           <a class="menu__link-active--max-768px" href="#" title="Ремонтируемые устройства">Ремонтируемые устройства</a></li>
+         <li class="menu__item--max-768px">
            <a href="#" title="Дополнительные услуги">Дополнительные услуги</a></li>
-         <li class="menu__price">
+         <li class="menu__item">
          <a href="#" title="Цены на услуги">Цены на услуги</a></li>
-         <li class="menu__adress">
+         <li class="menu__item">
            <a href="#" title="Адреса севисных центров">Адреса севисных центров</a></li>
-         <li class="menu__special-price">
+         <li class="menu__item">
            <a href="#" title="Специальные цены">Специальные цены</a></li>
-         <li class="menu__reviews">
+         <li class="menu__item">
            <a href="#" title="Отзывы">Отзывы</a></li>
        </ul>  
       </nav>
+
     <div class="about">
       <div class="about__text">
         <p class="about__part-1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
@@ -80,9 +80,7 @@
         </button>
       </div>
       <div class="logo-cps">
-        <p class="logo-cps__jpg">
           <img class="logo-cps__photo" src="./jpg/MG3223PC.jpg" alt="Логотип и режим работы"/>
-        </p>
       </div>
     </div>
   </main>  

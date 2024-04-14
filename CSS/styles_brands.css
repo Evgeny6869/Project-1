@@ -39,13 +39,13 @@ font-style: normal;
     border-top: 1px solid #D9FFF5;
   }
   
-  .swiper-container, .swiper {
+  .swiper-container .swiper {
     background-color: #f2f2f2;
     padding-bottom: 30px;
   }
   
   @media (min-width: 768px) {
-    .swiper-container, .swiper {
+    .swiper-container .swiper {
       padding-bottom: 0px;
     }
   }
@@ -70,7 +70,7 @@ font-style: normal;
     }
   }
   
-  .swiper, .swiper-slide {
+  .swiper .swiper-slide {
     background-color:#fff;
     border: 1px solid #eaeaea;
     border-radius: 10px;
@@ -81,7 +81,7 @@ font-style: normal;
   }
   
   @media (min-width: 768px) {
-    .swiper, .swiper-slide {
+    .swiper .swiper-slide {
       width: 224px;
       height: 72px;
       margin-bottom: 16px;
@@ -89,7 +89,7 @@ font-style: normal;
   }
   
   @media (min-width: 1120px) {
-    .swiper, .swiper-slide {
+    .swiper .swiper-slide {
       width: 240px;
       height: 72px;
     }
@@ -111,14 +111,14 @@ font-style: normal;
     cursor: pointer;
   }
   
-  .swiper, .swiper-pagination-bullet {
+  .swiper .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #B5B6BC;
   }
   
   @media (min-width: 768px) {
-    .swiper, .swiper-pagination-bullet {
+    .swiper .swiper-pagination-bullet {
       display: none;
     }
   }
@@ -140,7 +140,7 @@ font-style: normal;
   }
   
   @media (max-width: 767px) {
-    .btn-more, .read-more {
+    .btn-more .read-more {
       display: none;
     }
   }

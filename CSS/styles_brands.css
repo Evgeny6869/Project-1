@@ -127,6 +127,12 @@ font-style: normal;
     display: flex;
 }
 
+  @media (max-width: 767px) {
+    .btn-show-all {
+      display: none;
+    }
+  }
+
   .btn-more {
     background-color: #f2f2f2;
     border: none;
@@ -137,12 +143,6 @@ font-style: normal;
   
   .read-more {
     margin-left: 15px;
-  }
-  
-  @media (max-width: 767px) {
-    .btn-more .read-more {
-      display: none !important;
-    }
   }
   
   @media (min-width: 768px) {

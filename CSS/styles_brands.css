@@ -136,11 +136,11 @@ font-style: normal;
   }
   
   .read-more {
-    margin-left: 20px;
+    margin-left: 15px;
   }
   
   @media (max-width: 767px) {
-    .btn-more .read-more {
+    .btn-more, .read-more {
       display: none;
     }
   }
@@ -153,13 +153,8 @@ font-style: normal;
   
   @media (min-width: 968px) {
     .hide-element:nth-child(-n+8) {
-      display: block;
+      display: block !important;
     }
   }
   
-  @media (min-width: 1290px) {
-    .hide-element:nth-child(-n+10) {
-      display: block;
-    }
-  }
-  
+

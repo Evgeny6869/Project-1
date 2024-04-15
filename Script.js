@@ -34,7 +34,7 @@ window.addEventListener('resize', () => {
 });
 
 
-/* Кнопка показать все */
+/* Показать все */
 
 btn.addEventListener("click", function () {
   let card = document.querySelectorAll('.card');

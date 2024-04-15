@@ -141,7 +141,7 @@ font-style: normal;
   
   @media (max-width: 767px) {
     .btn-more .read-more {
-      display: none;
+      display: none !important;
     }
   }
   

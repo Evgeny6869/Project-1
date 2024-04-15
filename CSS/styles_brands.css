@@ -129,7 +129,7 @@ font-style: normal;
 
   @media (max-width: 767px) {
     .btn-show-all {
-      display: none;
+      display: none !important;
     }
   }
 

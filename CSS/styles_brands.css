@@ -147,7 +147,7 @@ font-style: normal;
   
   @media (min-width: 768px) {
     .hide-element {
-      display: none;
+      display: none !important;
     }
   }
   

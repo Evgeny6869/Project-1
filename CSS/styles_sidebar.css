@@ -91,12 +91,12 @@ button:hover {
 .menu__list > li {
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     height: 50%;
+    justify-content: space-between;
     margin: 32px 24px 0 24px;
     list-style: none;
     padding: 0;
+    align-items: flex-start;
 }
 
 .menu__list a {

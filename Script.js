@@ -1,10 +1,10 @@
-const slider = document.querySelector('.swiper');
-let mySwiper;
-let btn = document.querySelector('.btn-more');
-const HIDE = 'Скрыть';
-const SHOW_ALL = 'Показать все';
+var slider = document.querySelector('.swiper');
+var mySwiper;
+var button = document.querySelector('.btn-more');
+var show = 'Показать все';
+var hidden = 'Скрыть';
 
-function mobileSlider() {
+var mobileSlider = function() {
   if (window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
     mySwiper = new Swiper (slider, {
       pagination: {
@@ -14,46 +14,39 @@ function mobileSlider() {
         },
         slidesPerView: "auto",
     });
-
     slider.dataset.mobile = 'true';
   }
-
   if (window.innerWidth > 768) {
     slider.dataset.mobile = 'false';
-
     if (slider.classList.contains('swiper-container-initialized')) {
       mySwiper.destroy();
     }
   }
 }
-
 mobileSlider();
 
 window.addEventListener('resize', () => {
   mobileSlider();
 });
 
+/* -- Показать все элементы -- */
 
-/* Показать все */
-
-btn.addEventListener("click", function () {
-  let card = document.querySelectorAll('.card');
-    for (let i = 0; i < card.length; i++) {
-  card[i].classList.toggle("hide-element");
-  if (card[i].classList.contains("hide-element")) {
-    btn.value = SHOW_ALL;
+button.addEventListener("click", function () {
+  var element = document.querySelectorAll('.element');
+    for (let i = 0; i < element.length; i++) {
+      element[i].classList.toggle("hidden-item");
+  if (element[i].classList.contains("hidden-item")) {
+    button.value = show;
   } 
   else {
-    btn.value = HIDE;
+    button.value = hidden;
   }
-
-  let rotate = document.querySelector('.read-more');
-  
-  if (btn.value === HIDE) {
+  var rotate = document.querySelector('.read-more');
+  if (button.value === hidden) {
     rotate.style.transform = 'rotate(' + 180 + 'deg)';
   } 
   else {
     rotate.style.transform = null;
   }
-}
+  }
 });
